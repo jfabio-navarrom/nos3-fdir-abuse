@@ -79,5 +79,4 @@ Attack Vectors and Simulated Defenses." (preprint, 2026).
 
 ## License
 
-To be chosen by the author before public release. A permissive license (for example
-MIT or Apache 2.0) is suggested for a research artifact, but the decision is pending.
+J. Navarro Mora. “Abuse of Autonomous FDIR and Safe Mode in Small Satellites: Attack Vectors and Simulated Defenses.” Zenodo, 2026. DOI: 10.5281/zenodo.23287897
