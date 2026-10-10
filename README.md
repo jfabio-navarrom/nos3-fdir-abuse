@@ -75,8 +75,9 @@ Reproduction steps, including the exact build flow and the common pitfalls, are 
 ## How to cite
 
 J. Navarro Mora. "Abuse of Autonomous FDIR and Safe Mode in Small Satellites:
-Attack Vectors and Simulated Defenses." (preprint, 2026).
+Attack Vectors and Simulated Defenses." Zenodo, 2026. DOI:
+[10.5281/zenodo.23287897](https://doi.org/10.5281/zenodo.23287897).
 
 ## License
 
-J. Navarro Mora. “Abuse of Autonomous FDIR and Safe Mode in Small Satellites: Attack Vectors and Simulated Defenses.” Zenodo, 2026. DOI: 10.5281/zenodo.23287897
+This project is released under the Apache License 2.0. See the [LICENSE](LICENSE) file for details.
