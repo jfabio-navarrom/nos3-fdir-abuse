@@ -64,6 +64,22 @@ nos3-fdir-abuse/
 Both scripts are idempotent. They edit files by path under `~/nos3` and report if a
 change is already applied.
 
+## SPARTA technique and countermeasure mapping
+
+The two attacks and the two defenses map to the SPARTA matrix as follows. The mapping
+for Vector 1B was reviewed and confirmed with the SPARTA team.
+
+| Element | SPARTA technique | Countermeasure |
+|---------|------------------|----------------|
+| Vector 1A, unauthenticated mode change | EX-0011 (Exploit Reduced Protection During Safe-Mode), with SV-AV-5 (Fault Management Exploitation) | CM0044 (Cyber-safe Mode) |
+| Vector 1B, forged health telemetry | EX-0014.03 (Sensor Data) for the forged battery reading, and IMP-0007 (Native Functionality Abuse), the Subvert case, for the resulting autonomous safing | CM0042 (Robust Fault Management) |
+
+In Vector 1B the forged value is injected at the sensor and interface level (the
+simulated EPS device state of charge), not as a crafted message on the internal
+software bus. The forged reading enters through the normal device read path of the
+EPS application, which is why the sanity check in Defense 1B sits inside the
+application, right after the read and before the housekeeping is published.
+
 ## Requirements
 
 - A working NOS3 checkout at `~/nos3` (submodules populated), able to build and run.
